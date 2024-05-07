@@ -60,7 +60,7 @@ function createTrayIcon() {
 }
 ```
 
-![App Screenshot](./electron-tray/preview.png)
+![App Screenshot](./preview.png)
 
 🤔 其他参数请移步[官网](https://www.electronjs.org/zh/docs/latest/api/tray)查看详细信息
 

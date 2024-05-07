@@ -11,7 +11,7 @@ _官网(https://www.electronjs.org/)_
 
 使用 JavaScript，HTML 和 CSS 构建跨平台的桌面应用程序，通过将 Chromium 和 Node.js 合并到同一个运行环境中，兼容 Mac、Windows 和 Linux，可以构建出三个平台的应用程序。
 
-![App Screenshot](./electron-introduce/1.png)
+![App Screenshot](./1.png)
 
 ## 二、优势
 
@@ -40,7 +40,7 @@ vue add electron-builder
 ```
 
 安装完项目结构新增了以下内容：
-![App Screenshot](./electron-introduce/2.jpg)
+![App Screenshot](./2.jpg)
 其中 background.js 为 electron 主进程相关操作
 
 五、自定义打包命令

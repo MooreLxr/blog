@@ -178,3 +178,10 @@ feed:
     enable: true
     template: 'themes/shoka/layout/_alternate/json.ejs'
     output: 'feed.json'
+    
+# 文章字数统计
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
