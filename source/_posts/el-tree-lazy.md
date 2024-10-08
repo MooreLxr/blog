@@ -139,7 +139,11 @@ export default {
     loadLazyTree(node, resolve) {
       const isRootNode = node.level === 0 ? true : false
       const sendData = {
-        parentId: isRootNode ? null : node.data.id
+        parentId: isRootNode ? '' : node.data.id
+      }
+      if (isRootNode) {
+        this.rootNode = node
+        this.rootLazyNodeResolve = resolve
       }
       getPrepPlanOrganTree(sendData).then(res => {
         resolve(res.data)
@@ -155,10 +159,19 @@ export default {
     },
     // 重载当前节点的父节点
     loadParentNode() {
-      const treeNode = this.$refs.tree.getNode(this.currentNode.id)
-      treeNode.parent.loaded = false
-      treeNode.parent.childNodes = []
-      treeNode.parent.loadData() // 刷新父节点数据
+      const node = this.$refs.tree.getNode(this.currentNode.id)
+      if (node.parent) {
+        node.parent.loaded = false
+        node.parent.childNodes = []
+        node.parent.loadData() // 刷新父节点数据
+      } else {
+        this.loadRootNode()
+      }
+    },
+    // 重载根节点
+    loadRootNode() {
+      this.rootNode.childNodes = []
+      this.loadLazyTree(this.rootNode, this.rootLazyNodeResolve)
     },
     // 获取选中的子节点
     handleNodeClick(data, node) {
@@ -169,7 +182,6 @@ export default {
 }
 </script>
 ```
-亲试node.loadData()有时候获取不到导致报错
 
 
 [el-tree 懒加载load 手动触发load更新的三种方法](https://www.jianshu.com/p/0e1d4d28104e)
