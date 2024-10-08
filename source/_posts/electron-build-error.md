@@ -101,3 +101,4 @@ windows:C:\Users\Administrator\AppData\Local\electron-builder\Cache\nsis
 在 x86 上交叉编译出 arm64 的包，重新打包一下成功了！！！
 
 内网开发真的太痛苦了 😭😭😭
+

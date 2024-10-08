@@ -15,6 +15,7 @@ ps: 各种丰富的 echart 图集效果
 
 ### >>渐变色取色工具
 http://bj.91join.com/tiaose.html
+https://css.bqrdh.com/gradient
 
 ### >>box-shadow阴影在线调整
 https://box-shadow.dev/
@@ -84,9 +85,6 @@ https://www.2ppt.com/ppt.html
 
 https://www.51pptmoban.com/e/search/result/?searchid=27820
 
-### >>微博图床
-
-https://pic.gimhoy.com/
 
 ### >>云盘资源搜索平台
 
