@@ -326,3 +326,25 @@ v1.0
 ## License
 Apache License 2.0 Copyright(c) 2018-2020 [dusign](https://github.com/dusign)   
 [hexo-theme-snail](https://github.com/dusign/hexo-theme-snail) is derived from [hexo-theme-beantech](https://github.com/YenYuHsuan/hexo-theme-beantech) ，thanks [YenYuHsuan](https://github.com/YenYuHsuan).
+
+
+ ## 使用说明
+ 
+ 新建文章
+ ```
+ hexo new '文章标题'
+ ```
+  
+输入文字内容后看效果
+```
+hexo g
+hexo s
+```
+
+部署到 Github 上
+```
+hexo clean
+hexo g -d
+```
+
+ 

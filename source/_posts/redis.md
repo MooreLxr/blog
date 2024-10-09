@@ -10,23 +10,23 @@ tags: redis
 
 docker desktop[下载地址](https://www.docker.com/products/docker-desktop/)
 
-![alt text](./redis/image.png)
+![alt text](./image.png)
 
 打开docker desktop, 使用时需要科学上网，按下图进行配置即可
 
-![alt text](./redis/image2.png)
+![alt text](./image2.png)
 
 在 docker desktop 搜索框搜索 redis，点击 run，把 redis 官方镜像下载并跑起来。
 
-![alt text](./redis/image3.png)
+![alt text](./image3.png)
 
-![alt text](./redis/image.png)
+![alt text](./image.png)
 
 注：他让你填容器的信息:
 `端口映射`就是把主机的 6379 端口映射到容器内的 6379 端口，这样就能直接通过本机端口访问容器内的服务了，
 `Volumes 指定数据卷`用本机的任意一个目录挂载到容器内的 /data 目录，这样数据就会保存在本机。
 
-![alt text](./redis/image5.png)
+![alt text](./image5.png)
 
 这就是redis跑起来后的日志
 
@@ -36,14 +36,14 @@ docker desktop[下载地址](https://www.docker.com/products/docker-desktop/)
 
 它是 redis 官方出的 GUI 工具, redisInsight[下载地址](https://redis.io/insight/)
 
-![alt text](./redis/image6.png)
+![alt text](./image6.png)
 
 打开 RedisInsight，连接刚才用 docker 跑的 redis server：
 
-![alt text](./redis/image7.png)
+![alt text](./image7.png)
 
 查看该服务所创建的所有key
-![alt text](./redis/image8.png)
+![alt text](./image8.png)
 
 ### AnotherRedisDesktopManager
 
